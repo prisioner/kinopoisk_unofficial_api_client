@@ -1,0 +1,1596 @@
+{
+  "Film": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "kinopoiskHDId": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "imdbId": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "coverUrl": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "logoUrl": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "reviewsCount": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "ratingGoodReview": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingGoodReviewVoteCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "ratingKinopoisk": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingKinopoiskVoteCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "ratingImdb": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingImdbVoteCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "ratingFilmCritics": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingFilmCriticsVoteCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "ratingAwait": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingAwaitCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "ratingRfCritics": {
+      "type": "number",
+      "nullable": true,
+      "required": true
+    },
+    "ratingRfCriticsVoteCount": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "webUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "filmLength": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "slogan": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "editorAnnotation": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "isTicketsAvailable": {
+      "type": "boolean",
+      "nullable": false,
+      "required": true
+    },
+    "productionStatus": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "ratingMpaa": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "ratingAgeLimits": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "hasImax": {
+      "type": "boolean",
+      "nullable": true,
+      "required": true
+    },
+    "has3D": {
+      "type": "boolean",
+      "nullable": true,
+      "required": true
+    },
+    "lastSync": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Genre"
+    },
+    "startYear": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "endYear": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "serial": {
+      "type": "boolean",
+      "nullable": true
+    },
+    "shortFilm": {
+      "type": "boolean",
+      "nullable": true
+    },
+    "completed": {
+      "type": "boolean",
+      "nullable": true
+    }
+  },
+  "SeasonResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Season"
+    }
+  },
+  "FactResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Fact"
+    }
+  },
+  "DistributionResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Distribution"
+    }
+  },
+  "BoxOfficeResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "BoxOffice"
+    }
+  },
+  "Fact": {
+    "text": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "spoiler": {
+      "type": "boolean",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "BoxOffice": {
+    "type": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "amount": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "currencyCode": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "symbol": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "AwardResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Award"
+    }
+  },
+  "Award": {
+    "name": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "win": {
+      "type": "boolean",
+      "nullable": false,
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nominationName": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "persons": {
+      "type": "array",
+      "nullable": false,
+      "items": "AwardPerson"
+    }
+  },
+  "AwardPerson": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "webUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "sex": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "growth": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "birthday": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "death": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "age": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "birthplace": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "deathplace": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "profession": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    }
+  },
+  "Distribution": {
+    "type": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "subType": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "reRelease": {
+      "type": "boolean",
+      "nullable": true,
+      "required": true
+    },
+    "country": {
+      "type": "Country",
+      "nullable": false,
+      "required": true
+    },
+    "companies": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Company"
+    }
+  },
+  "Company": {
+    "name": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "Season": {
+    "number": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "episodes": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Episode"
+    }
+  },
+  "Episode": {
+    "seasonNumber": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "episodeNumber": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "synopsis": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "releaseDate": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    }
+  },
+  "Country": {
+    "country": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "Genre": {
+    "genre": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "FiltersResponse": {
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "FiltersResponse_genres"
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "FiltersResponse_countries"
+    }
+  },
+  "FilmSearchResponse": {
+    "keyword": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "pagesCount": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "searchFilmsCountResult": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "films": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "FilmSearchResponse_films"
+    }
+  },
+  "FilmSearchByFiltersResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "FilmSearchByFiltersResponse_items"
+    }
+  },
+  "FilmSequelsAndPrequelsResponse": {
+    "filmId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "relationType": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "RelatedFilmResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "RelatedFilmResponse_items"
+    }
+  },
+  "ReviewResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPositiveReviews": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalNegativeReviews": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalNeutralReviews": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "ReviewResponse_items"
+    }
+  },
+  "ExternalSourceResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "ExternalSourceResponse_items"
+    }
+  },
+  "FilmCollectionResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "FilmCollectionResponse_items"
+    }
+  },
+  "StaffResponse": {
+    "staffId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "professionText": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "professionKey": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "PersonResponse": {
+    "personId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "webUrl": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "sex": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "growth": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "birthday": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "death": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "age": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "birthplace": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "deathplace": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "hasAwards": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "profession": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "facts": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "string"
+    },
+    "spouses": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "PersonResponse_spouses"
+    },
+    "films": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "PersonResponse_films"
+    }
+  },
+  "PersonByNameResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "PersonByNameResponse_items"
+    }
+  },
+  "ImageResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "ImageResponse_items"
+    }
+  },
+  "PremiereResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "PremiereResponseItem"
+    }
+  },
+  "PremiereResponseItem": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true,
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Genre"
+    },
+    "duration": {
+      "type": "integer",
+      "nullable": true,
+      "required": true
+    },
+    "premiereRu": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "DigitalReleaseResponse": {
+    "page": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "releases": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "DigitalReleaseItem"
+    }
+  },
+  "DigitalReleaseItem": {
+    "filmId": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "Genre"
+    },
+    "rating": {
+      "type": "number",
+      "nullable": false,
+      "required": true
+    },
+    "ratingVoteCount": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "expectationsRating": {
+      "type": "number",
+      "nullable": false,
+      "required": true
+    },
+    "expectationsRatingVoteCount": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "duration": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "releaseDate": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "VideoResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "VideoResponse_items"
+    }
+  },
+  "KinopoiskUserVoteResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "KinopoiskUserVoteResponse_items"
+    }
+  },
+  "ApiKeyResponse": {
+    "totalQuota": {
+      "type": "ApiKeyResponse_totalQuota",
+      "nullable": false,
+      "required": true
+    },
+    "dailyQuota": {
+      "type": "ApiKeyResponse_dailyQuota",
+      "nullable": false,
+      "required": true
+    },
+    "accountType": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "MediaPostsResponse": {
+    "total": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "totalPages": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "nullable": false,
+      "required": true,
+      "items": "MediaPostsResponse_items"
+    }
+  },
+  "ApiError": {
+    "message": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "FiltersResponse_genres": {
+    "id": {
+      "type": "integer",
+      "nullable": false
+    },
+    "genre": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "FiltersResponse_countries": {
+    "id": {
+      "type": "integer",
+      "nullable": false
+    },
+    "country": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "FilmSearchResponse_films": {
+    "filmId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": false
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": false
+    },
+    "type": {
+      "type": "string",
+      "nullable": false
+    },
+    "year": {
+      "type": "string",
+      "nullable": false
+    },
+    "description": {
+      "type": "string",
+      "nullable": false
+    },
+    "filmLength": {
+      "type": "string",
+      "nullable": false
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "items": "Genre"
+    },
+    "rating": {
+      "type": "string",
+      "nullable": false
+    },
+    "ratingVoteCount": {
+      "type": "integer",
+      "nullable": false
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "FilmSearchByFiltersResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "imdbId": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "items": "Genre"
+    },
+    "ratingKinopoisk": {
+      "type": "number",
+      "nullable": true
+    },
+    "ratingImdb": {
+      "type": "number",
+      "nullable": true
+    },
+    "year": {
+      "type": "number",
+      "nullable": true
+    },
+    "type": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "RelatedFilmResponse_items": {
+    "filmId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false
+    },
+    "relationType": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "ReviewResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "type": {
+      "type": "string",
+      "nullable": false
+    },
+    "date": {
+      "type": "string",
+      "nullable": false
+    },
+    "positiveRating": {
+      "type": "integer",
+      "nullable": false
+    },
+    "negativeRating": {
+      "type": "integer",
+      "nullable": false
+    },
+    "author": {
+      "type": "string",
+      "nullable": false
+    },
+    "title": {
+      "type": "string",
+      "nullable": true
+    },
+    "description": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "ExternalSourceResponse_items": {
+    "url": {
+      "type": "string",
+      "nullable": false
+    },
+    "platform": {
+      "type": "string",
+      "nullable": false
+    },
+    "logoUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "positiveRating": {
+      "type": "integer",
+      "nullable": false
+    },
+    "negativeRating": {
+      "type": "integer",
+      "nullable": false
+    },
+    "author": {
+      "type": "string",
+      "nullable": false
+    },
+    "title": {
+      "type": "string",
+      "nullable": true
+    },
+    "description": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "FilmCollectionResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "items": "Genre"
+    },
+    "ratingKinopoisk": {
+      "type": "number",
+      "nullable": true
+    },
+    "ratingImbd": {
+      "type": "number",
+      "nullable": true
+    },
+    "year": {
+      "type": "string",
+      "nullable": true
+    },
+    "type": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "PersonResponse_spouses": {
+    "personId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "name": {
+      "type": "string",
+      "nullable": true
+    },
+    "divorced": {
+      "type": "boolean",
+      "nullable": false
+    },
+    "divorcedReason": {
+      "type": "string",
+      "nullable": true
+    },
+    "sex": {
+      "type": "string",
+      "nullable": false
+    },
+    "children": {
+      "type": "integer",
+      "nullable": false
+    },
+    "webUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "relation": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "PersonResponse_films": {
+    "filmId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "rating": {
+      "type": "string",
+      "nullable": true
+    },
+    "general": {
+      "type": "boolean",
+      "nullable": false
+    },
+    "description": {
+      "type": "string",
+      "nullable": true
+    },
+    "professionKey": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "PersonByNameResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "webUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "sex": {
+      "type": "string",
+      "nullable": true
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "ImageResponse_items": {
+    "imageUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "previewUrl": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "VideoResponse_items": {
+    "url": {
+      "type": "string",
+      "nullable": false
+    },
+    "name": {
+      "type": "string",
+      "nullable": false
+    },
+    "site": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "KinopoiskUserVoteResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "nameRu": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameEn": {
+      "type": "string",
+      "nullable": true
+    },
+    "nameOriginal": {
+      "type": "string",
+      "nullable": true
+    },
+    "countries": {
+      "type": "array",
+      "nullable": false,
+      "items": "Country"
+    },
+    "genres": {
+      "type": "array",
+      "nullable": false,
+      "items": "Genre"
+    },
+    "ratingKinopoisk": {
+      "type": "number",
+      "nullable": true
+    },
+    "ratingImbd": {
+      "type": "number",
+      "nullable": true
+    },
+    "year": {
+      "type": "string",
+      "nullable": true
+    },
+    "type": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "posterUrlPreview": {
+      "type": "string",
+      "nullable": false
+    },
+    "userRating": {
+      "type": "integer",
+      "nullable": false
+    }
+  },
+  "ApiKeyResponse_totalQuota": {
+    "value": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "used": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "ApiKeyResponse_dailyQuota": {
+    "value": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    },
+    "used": {
+      "type": "integer",
+      "nullable": false,
+      "required": true
+    }
+  },
+  "MediaPostsResponse_items": {
+    "kinopoiskId": {
+      "type": "integer",
+      "nullable": false
+    },
+    "imageUrl": {
+      "type": "string",
+      "nullable": false
+    },
+    "title": {
+      "type": "string",
+      "nullable": false
+    },
+    "description": {
+      "type": "string",
+      "nullable": false
+    },
+    "url": {
+      "type": "string",
+      "nullable": false
+    },
+    "publishedAt": {
+      "type": "string",
+      "nullable": false
+    }
+  }
+}
