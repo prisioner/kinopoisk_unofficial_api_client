@@ -1084,13 +1084,6 @@
       "items": "MediaPostsResponse_items"
     }
   },
-  "ApiError": {
-    "message": {
-      "type": "string",
-      "nullable": false,
-      "required": true
-    }
-  },
   "FiltersResponse_genres": {
     "id": {
       "type": "integer",

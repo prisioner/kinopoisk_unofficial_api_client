@@ -49,7 +49,7 @@ task :parse_schema do
     [type_name, type_schema]
   end
 
-  File.write "#{__dir__}/../data/type_attributes.json", JSON.pretty_generate(result)
+  File.write "#{__dir__}/../data/type_attributes.json", JSON.pretty_generate(result.except('ApiError'))
 end
 
 def required_keys(schema)
