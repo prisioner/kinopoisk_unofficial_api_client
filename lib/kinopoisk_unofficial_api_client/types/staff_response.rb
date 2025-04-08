@@ -4,9 +4,9 @@ module KinopoiskUnofficialApiClient
   module Types
     class StaffResponse < Base
       attribute :staffId, Types::Integer
-      attribute :nameRu, Types::String.default(nil).optional
-      attribute :nameEn, Types::String.default(nil).optional
-      attribute :description, Types::String.default(nil).optional
+      attribute :nameRu, Types::String.optional
+      attribute :nameEn, Types::String.optional
+      attribute :description, Types::String.optional
       attribute :posterUrl, Types::String
       attribute :professionText, Types::String
       attribute :professionKey, Types::String

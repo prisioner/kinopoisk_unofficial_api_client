@@ -61,12 +61,10 @@ def build_nested_type(name, attributes)
 end
 
 def apply_default(attributes, attr_name, properties, original_type)
-  if properties[:default]
-    attributes[attr_name][:type] += ".default(#{typecast(original_type, properties[:default])})"
-  elsif properties[:nullable] && properties[:required]
-    attributes[attr_name][:type] += ".default(nil)"
-  end
+  return attributes if properties[:default].nil?
 
+  attributes[attr_name][:type] += ".default(#{typecast(original_type,
+                                                       properties[:default])})"
   attributes
 end
 

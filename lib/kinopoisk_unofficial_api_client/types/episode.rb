@@ -5,10 +5,10 @@ module KinopoiskUnofficialApiClient
     class Episode < Base
       attribute :seasonNumber, Types::Integer
       attribute :episodeNumber, Types::Integer
-      attribute :nameRu, Types::String.default(nil).optional
-      attribute :nameEn, Types::String.default(nil).optional
-      attribute :synopsis, Types::String.default(nil).optional
-      attribute :releaseDate, Types::String.default(nil).optional
+      attribute :nameRu, Types::String.optional
+      attribute :nameEn, Types::String.optional
+      attribute :synopsis, Types::String.optional
+      attribute :releaseDate, Types::String.optional
       alias season_number seasonNumber
       alias episode_number episodeNumber
       alias name_ru nameRu

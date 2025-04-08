@@ -4,47 +4,47 @@ module KinopoiskUnofficialApiClient
   module Types
     class Film < Base
       attribute :kinopoiskId, Types::Integer
-      attribute :kinopoiskHDId, Types::String.default(nil).optional
-      attribute :imdbId, Types::String.default(nil).optional
-      attribute :nameRu, Types::String.default(nil).optional
-      attribute :nameEn, Types::String.default(nil).optional
-      attribute :nameOriginal, Types::String.default(nil).optional
+      attribute :kinopoiskHDId, Types::String.optional
+      attribute :imdbId, Types::String.optional
+      attribute :nameRu, Types::String.optional
+      attribute :nameEn, Types::String.optional
+      attribute :nameOriginal, Types::String.optional
       attribute :posterUrl, Types::String
       attribute :posterUrlPreview, Types::String
-      attribute :coverUrl, Types::String.default(nil).optional
-      attribute :logoUrl, Types::String.default(nil).optional
+      attribute :coverUrl, Types::String.optional
+      attribute :logoUrl, Types::String.optional
       attribute :reviewsCount, Types::Integer
-      attribute :ratingGoodReview, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingGoodReviewVoteCount, Types::Integer.default(nil).optional
-      attribute :ratingKinopoisk, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingKinopoiskVoteCount, Types::Integer.default(nil).optional
-      attribute :ratingImdb, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingImdbVoteCount, Types::Integer.default(nil).optional
-      attribute :ratingFilmCritics, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingFilmCriticsVoteCount, Types::Integer.default(nil).optional
-      attribute :ratingAwait, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingAwaitCount, Types::Integer.default(nil).optional
-      attribute :ratingRfCritics, Types::Float | Types::Integer.default(nil).optional
-      attribute :ratingRfCriticsVoteCount, Types::Integer.default(nil).optional
+      attribute :ratingGoodReview, Types::Float | Types::Integer.optional
+      attribute :ratingGoodReviewVoteCount, Types::Integer.optional
+      attribute :ratingKinopoisk, Types::Float | Types::Integer.optional
+      attribute :ratingKinopoiskVoteCount, Types::Integer.optional
+      attribute :ratingImdb, Types::Float | Types::Integer.optional
+      attribute :ratingImdbVoteCount, Types::Integer.optional
+      attribute :ratingFilmCritics, Types::Float | Types::Integer.optional
+      attribute :ratingFilmCriticsVoteCount, Types::Integer.optional
+      attribute :ratingAwait, Types::Float | Types::Integer.optional
+      attribute :ratingAwaitCount, Types::Integer.optional
+      attribute :ratingRfCritics, Types::Float | Types::Integer.optional
+      attribute :ratingRfCriticsVoteCount, Types::Integer.optional
       attribute :webUrl, Types::String
-      attribute :year, Types::Integer.default(nil).optional
-      attribute :filmLength, Types::Integer.default(nil).optional
-      attribute :slogan, Types::String.default(nil).optional
-      attribute :description, Types::String.default(nil).optional
-      attribute :shortDescription, Types::String.default(nil).optional
-      attribute :editorAnnotation, Types::String.default(nil).optional
+      attribute :year, Types::Integer.optional
+      attribute :filmLength, Types::Integer.optional
+      attribute :slogan, Types::String.optional
+      attribute :description, Types::String.optional
+      attribute :shortDescription, Types::String.optional
+      attribute :editorAnnotation, Types::String.optional
       attribute :isTicketsAvailable, Types::Bool
-      attribute :productionStatus, Types::String.default(nil).optional
+      attribute :productionStatus, Types::String.optional
       attribute :type, Types::String
-      attribute :ratingMpaa, Types::String.default(nil).optional
-      attribute :ratingAgeLimits, Types::String.default(nil).optional
-      attribute :hasImax, Types::Bool.default(nil).optional
-      attribute :has3D, Types::Bool.default(nil).optional
+      attribute :ratingMpaa, Types::String.optional
+      attribute :ratingAgeLimits, Types::String.optional
+      attribute :hasImax, Types::Bool.optional
+      attribute :has3D, Types::Bool.optional
       attribute :lastSync, Types::String
       attribute :countries, Types::Array.of(Country)
       attribute :genres, Types::Array.of(Genre)
-      attribute :startYear, Types::Integer.default(nil).optional
-      attribute :endYear, Types::Integer.default(nil).optional
+      attribute :startYear, Types::Integer.optional
+      attribute :endYear, Types::Integer.optional
       attribute? :serial, Types::Bool.optional
       attribute? :shortFilm, Types::Bool.optional
       attribute? :completed, Types::Bool.optional

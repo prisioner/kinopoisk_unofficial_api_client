@@ -5,7 +5,7 @@ module KinopoiskUnofficialApiClient
     class Award < Base
       attribute :name, Types::String
       attribute :win, Types::Bool
-      attribute :imageUrl, Types::String.default(nil).optional
+      attribute :imageUrl, Types::String.optional
       attribute :nominationName, Types::String
       attribute :year, Types::Integer
       attribute? :persons, Types::Array.of(AwardPerson)

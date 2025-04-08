@@ -4,19 +4,19 @@ module KinopoiskUnofficialApiClient
   module Types
     class PersonResponse < Base
       attribute :personId, Types::Integer
-      attribute :webUrl, Types::String.default(nil).optional
-      attribute :nameRu, Types::String.default(nil).optional
-      attribute :nameEn, Types::String.default(nil).optional
-      attribute :sex, Types::String.default(nil).optional
+      attribute :webUrl, Types::String.optional
+      attribute :nameRu, Types::String.optional
+      attribute :nameEn, Types::String.optional
+      attribute :sex, Types::String.optional
       attribute :posterUrl, Types::String
-      attribute :growth, Types::String.default(nil).optional
-      attribute :birthday, Types::String.default(nil).optional
-      attribute :death, Types::String.default(nil).optional
-      attribute :age, Types::Integer.default(nil).optional
-      attribute :birthplace, Types::String.default(nil).optional
-      attribute :deathplace, Types::String.default(nil).optional
-      attribute :hasAwards, Types::Integer.default(nil).optional
-      attribute :profession, Types::String.default(nil).optional
+      attribute :growth, Types::String.optional
+      attribute :birthday, Types::String.optional
+      attribute :death, Types::String.optional
+      attribute :age, Types::Integer.optional
+      attribute :birthplace, Types::String.optional
+      attribute :deathplace, Types::String.optional
+      attribute :hasAwards, Types::Integer.optional
+      attribute :profession, Types::String.optional
       attribute :facts, Types::Array.of(Types::String)
       attribute :spouses, Types::Array.of(PersonResponse::Spouse)
       attribute :films, Types::Array.of(PersonResponse::Film)
