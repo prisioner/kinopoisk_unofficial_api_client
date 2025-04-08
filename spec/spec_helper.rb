@@ -18,6 +18,8 @@ VCR.configure do |config|
   end
 end
 
+Dir["#{__dir__}/support/**/*.rb"].sort.each { |f| require f }
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = ".rspec_status"
@@ -28,4 +30,9 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+KinopoiskUnofficialApiClient.configure do |config|
+  config.genres = JSON.parse(File.read("#{__dir__}/fixtures/genres.json"), symbolize_names: true)
+  config.countries = JSON.parse(File.read("#{__dir__}/fixtures/countries.json"), symbolize_names: true)
 end
