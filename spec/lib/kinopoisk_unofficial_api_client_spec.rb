@@ -2,6 +2,6 @@
 
 RSpec.describe KinopoiskUnofficialApiClient do
   it "has a version number" do
-    expect(KinopoiskUnofficialApiClient::VERSION).not_to be nil
+    expect(KinopoiskUnofficialApiClient::VERSION).not_to be_nil
   end
 end
