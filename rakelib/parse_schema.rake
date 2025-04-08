@@ -7,6 +7,8 @@ task :parse_schema do
   document = Openapi3Parser.load_url('https://kinopoiskapiunofficial.tech/documentation/api/openapi.json')
 
   result = document.components.schemas.to_h do |type_name, schema|
+    type_name = cast_underscored_type(type_name)
+
     type_schema = schema.properties.to_h do |property_name, property_schema|
       attribute = { type: parse_initial_type(property_schema, property_name) }
 
@@ -17,6 +19,7 @@ task :parse_schema do
       attribute[:type] = attribute[:type].join if attribute[:type]&.length == 1
 
       attribute[:nullable] = property_schema.nullable?
+      attribute[:nullable] = true if type_name == 'Distribution' && property_name == 'country'
 
       attribute[:required] = true if required_keys(schema).include?(property_name)
 
@@ -35,10 +38,7 @@ task :parse_schema do
 
       attribute[:items] = property_schema.items.name if property_schema&.items&.type == 'object'
 
-      # array of arrays
-      if property_schema&.items&.type == 'array'
-        attribute[:items] = { type: 'array', items: property_schema.items.items.name }
-      end
+      attribute[:items] = cast_underscored_type(attribute[:items]) if attribute[:items]
 
       attribute = apply_default_schema(attribute, property_schema)
       [property_name, attribute]
@@ -64,9 +64,28 @@ def apply_default_schema(attribute, property_schema)
 end
 
 def parse_initial_type(property_schema, property_name)
-  case property_schema.type
-  when nil then property_name.capitalize.gsub(/_(\w)/) { Regexp.last_match(1).upcase }
-  when 'object' then property_schema.name
-  else property_schema.type
-  end
+  initial_type =
+    case property_schema.type
+    when nil then property_name.capitalize.gsub(/_(\w)/) { Regexp.last_match(1).upcase }
+    when 'object' then property_schema.name
+    else property_schema.type
+    end
+
+  cast_underscored_type(initial_type)
+end
+
+def cast_underscored_type(type_name)
+  return type_name unless type_name.include?('_')
+
+  parts = type_name.split('_')
+  parts[1] =
+    case parts[1]
+    when 'countries' then 'Country'
+    when /s$/ then parts[1][0..-2].capitalize
+    when /([a-z\d])([A-Z])/
+      parts[1].gsub(/([a-z\d])([A-Z])/, '\1_\2').split('_').map(&:capitalize).join
+    else parts[1]
+    end
+
+  parts.join('::')
 end

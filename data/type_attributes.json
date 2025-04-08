@@ -456,7 +456,7 @@
     },
     "country": {
       "type": "Country",
-      "nullable": false,
+      "nullable": true,
       "required": true
     },
     "companies": {
@@ -537,13 +537,13 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "FiltersResponse_genres"
+      "items": "FiltersResponse::Genre"
     },
     "countries": {
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "FiltersResponse_countries"
+      "items": "FiltersResponse::Country"
     }
   },
   "FilmSearchResponse": {
@@ -566,7 +566,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "FilmSearchResponse_films"
+      "items": "FilmSearchResponse::Film"
     }
   },
   "FilmSearchByFiltersResponse": {
@@ -584,7 +584,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "FilmSearchByFiltersResponse_items"
+      "items": "FilmSearchByFiltersResponse::Item"
     }
   },
   "FilmSequelsAndPrequelsResponse": {
@@ -634,7 +634,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "RelatedFilmResponse_items"
+      "items": "RelatedFilmResponse::Item"
     }
   },
   "ReviewResponse": {
@@ -667,7 +667,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "ReviewResponse_items"
+      "items": "ReviewResponse::Item"
     }
   },
   "ExternalSourceResponse": {
@@ -680,7 +680,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "ExternalSourceResponse_items"
+      "items": "ExternalSourceResponse::Item"
     }
   },
   "FilmCollectionResponse": {
@@ -698,7 +698,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "FilmCollectionResponse_items"
+      "items": "FilmCollectionResponse::Item"
     }
   },
   "StaffResponse": {
@@ -819,13 +819,13 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "PersonResponse_spouses"
+      "items": "PersonResponse::Spouse"
     },
     "films": {
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "PersonResponse_films"
+      "items": "PersonResponse::Film"
     }
   },
   "PersonByNameResponse": {
@@ -838,7 +838,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "PersonByNameResponse_items"
+      "items": "PersonByNameResponse::Item"
     }
   },
   "ImageResponse": {
@@ -856,7 +856,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "ImageResponse_items"
+      "items": "ImageResponse::Item"
     }
   },
   "PremiereResponse": {
@@ -1028,7 +1028,7 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "VideoResponse_items"
+      "items": "VideoResponse::Item"
     }
   },
   "KinopoiskUserVoteResponse": {
@@ -1046,17 +1046,17 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "KinopoiskUserVoteResponse_items"
+      "items": "KinopoiskUserVoteResponse::Item"
     }
   },
   "ApiKeyResponse": {
     "totalQuota": {
-      "type": "ApiKeyResponse_totalQuota",
+      "type": "ApiKeyResponse::TotalQuota",
       "nullable": false,
       "required": true
     },
     "dailyQuota": {
-      "type": "ApiKeyResponse_dailyQuota",
+      "type": "ApiKeyResponse::DailyQuota",
       "nullable": false,
       "required": true
     },
@@ -1081,10 +1081,10 @@
       "type": "array",
       "nullable": false,
       "required": true,
-      "items": "MediaPostsResponse_items"
+      "items": "MediaPostsResponse::Item"
     }
   },
-  "FiltersResponse_genres": {
+  "FiltersResponse::Genre": {
     "id": {
       "type": "integer",
       "nullable": false
@@ -1094,7 +1094,7 @@
       "nullable": false
     }
   },
-  "FiltersResponse_countries": {
+  "FiltersResponse::Country": {
     "id": {
       "type": "integer",
       "nullable": false
@@ -1104,7 +1104,7 @@
       "nullable": false
     }
   },
-  "FilmSearchResponse_films": {
+  "FilmSearchResponse::Film": {
     "filmId": {
       "type": "integer",
       "nullable": false
@@ -1160,7 +1160,7 @@
       "nullable": false
     }
   },
-  "FilmSearchByFiltersResponse_items": {
+  "FilmSearchByFiltersResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
@@ -1216,7 +1216,7 @@
       "nullable": false
     }
   },
-  "RelatedFilmResponse_items": {
+  "RelatedFilmResponse::Item": {
     "filmId": {
       "type": "integer",
       "nullable": false
@@ -1246,7 +1246,7 @@
       "nullable": false
     }
   },
-  "ReviewResponse_items": {
+  "ReviewResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
@@ -1280,7 +1280,7 @@
       "nullable": false
     }
   },
-  "ExternalSourceResponse_items": {
+  "ExternalSourceResponse::Item": {
     "url": {
       "type": "string",
       "nullable": false
@@ -1314,7 +1314,7 @@
       "nullable": false
     }
   },
-  "FilmCollectionResponse_items": {
+  "FilmCollectionResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
@@ -1366,7 +1366,7 @@
       "nullable": false
     }
   },
-  "PersonResponse_spouses": {
+  "PersonResponse::Spouse": {
     "personId": {
       "type": "integer",
       "nullable": false
@@ -1400,7 +1400,7 @@
       "nullable": false
     }
   },
-  "PersonResponse_films": {
+  "PersonResponse::Film": {
     "filmId": {
       "type": "integer",
       "nullable": false
@@ -1430,7 +1430,7 @@
       "nullable": false
     }
   },
-  "PersonByNameResponse_items": {
+  "PersonByNameResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
@@ -1456,7 +1456,7 @@
       "nullable": false
     }
   },
-  "ImageResponse_items": {
+  "ImageResponse::Item": {
     "imageUrl": {
       "type": "string",
       "nullable": false
@@ -1466,7 +1466,7 @@
       "nullable": false
     }
   },
-  "VideoResponse_items": {
+  "VideoResponse::Item": {
     "url": {
       "type": "string",
       "nullable": false
@@ -1480,7 +1480,7 @@
       "nullable": false
     }
   },
-  "KinopoiskUserVoteResponse_items": {
+  "KinopoiskUserVoteResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
@@ -1536,7 +1536,7 @@
       "nullable": false
     }
   },
-  "ApiKeyResponse_totalQuota": {
+  "ApiKeyResponse::TotalQuota": {
     "value": {
       "type": "integer",
       "nullable": false,
@@ -1548,7 +1548,7 @@
       "required": true
     }
   },
-  "ApiKeyResponse_dailyQuota": {
+  "ApiKeyResponse::DailyQuota": {
     "value": {
       "type": "integer",
       "nullable": false,
@@ -1560,7 +1560,7 @@
       "required": true
     }
   },
-  "MediaPostsResponse_items": {
+  "MediaPostsResponse::Item": {
     "kinopoiskId": {
       "type": "integer",
       "nullable": false
