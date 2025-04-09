@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v1/api_keys/<X_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:13:30 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: '{"totalQuota":{"value":-1,"used":52},"dailyQuota":{"value":500,"used":10},"accountType":"FREE"}'
+  recorded_at: Wed, 09 Apr 2025 03:13:30 GMT
+recorded_with: VCR 6.3.1

@@ -9,7 +9,7 @@ module KinopoiskUnofficialApiClient
       attribute :nameEn, Types::String.optional
       attribute :sex, Types::String.optional
       attribute :posterUrl, Types::String
-      attribute :growth, Types::String.optional
+      attribute :growth, Types::Integer.optional
       attribute :birthday, Types::String.optional
       attribute :death, Types::String.optional
       attribute :age, Types::Integer.optional

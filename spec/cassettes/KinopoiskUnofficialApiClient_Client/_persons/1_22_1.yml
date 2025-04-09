@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v1/persons?name=Jim+Carrey&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:13:30 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6NSwiaXRlbXMiOlt7Imtpbm9wb2lza0lkIjo2MTQxLCJ3ZWJVcmwiOiJodHRwczovL3d3dy5raW5vcG9pc2sucnUvbmFtZS82MTQxLyIsIm5hbWVSdSI6ItCU0LbQuNC8INCa0LXRgNGA0LgiLCJuYW1lRW4iOiJKaW0gQ2FycmV5Iiwic2V4IjoiTUFMRSIsInBvc3RlclVybCI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9hY3Rvcl9wb3N0ZXJzL2twLzYxNDEuanBnIn0seyJraW5vcG9pc2tJZCI6NTYxNDAwMiwid2ViVXJsIjoiaHR0cHM6Ly93d3cua2lub3BvaXNrLnJ1L25hbWUvNTYxNDAwMi8iLCJuYW1lUnUiOiIiLCJuYW1lRW4iOiJKaW0gQ2FycmV5Iiwic2V4IjoiTUFMRSIsInBvc3RlclVybCI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9hY3Rvcl9wb3N0ZXJzL2twLzU2MTQwMDIuanBnIn0seyJraW5vcG9pc2tJZCI6MTEyMTc3MCwid2ViVXJsIjoiaHR0cHM6Ly93d3cua2lub3BvaXNrLnJ1L25hbWUvMTEyMTc3MC8iLCJuYW1lUnUiOiLQlNC20LXQudC80YEg0JrQtdGA0YDQuCIsIm5hbWVFbiI6IkphbWVzIENhcnJleSIsInNleCI6Ik1BTEUiLCJwb3N0ZXJVcmwiOiJodHRwczovL2tpbm9wb2lza2FwaXVub2ZmaWNpYWwudGVjaC9pbWFnZXMvYWN0b3JfcG9zdGVycy9rcC8xMTIxNzcwLmpwZyJ9LHsia2lub3BvaXNrSWQiOjM0MDQwMzksIndlYlVybCI6Imh0dHBzOi8vd3d3Lmtpbm9wb2lzay5ydS9uYW1lLzM0MDQwMzkvIiwibmFtZVJ1IjoiIiwibmFtZUVuIjoiSmFtZXMgQ2FycmV5Iiwic2V4IjoiTUFMRSIsInBvc3RlclVybCI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9hY3Rvcl9wb3N0ZXJzL2twLzM0MDQwMzkuanBnIn0seyJraW5vcG9pc2tJZCI6NTMwNzg4NSwid2ViVXJsIjoiaHR0cHM6Ly93d3cua2lub3BvaXNrLnJ1L25hbWUvNTMwNzg4NS8iLCJuYW1lUnUiOiIiLCJuYW1lRW4iOiJKYW1lcyBDYXJyZXkiLCJzZXgiOiJNQUxFIiwicG9zdGVyVXJsIjoiaHR0cHM6Ly9raW5vcG9pc2thcGl1bm9mZmljaWFsLnRlY2gvaW1hZ2VzL2FjdG9yX3Bvc3RlcnMva3AvNTMwNzg4NS5qcGcifV19
+  recorded_at: Wed, 09 Apr 2025 03:13:30 GMT
+recorded_with: VCR 6.3.1

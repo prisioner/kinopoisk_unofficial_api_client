@@ -12,7 +12,7 @@ module KinopoiskUnofficialApiClient
         attribute? :genres, Types::Array.of(Genre)
         attribute? :ratingKinopoisk, Types::Float | Types::Integer.optional
         attribute? :ratingImbd, Types::Float | Types::Integer.optional
-        attribute? :year, Types::String.optional
+        attribute? :year, Types::Integer.optional
         attribute? :type, Types::String
         attribute? :posterUrl, Types::String
         attribute? :posterUrlPreview, Types::String

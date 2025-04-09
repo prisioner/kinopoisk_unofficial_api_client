@@ -2,9 +2,9 @@
 
 RSpec.describe KinopoiskUnofficialApiClient::RequestSchemas::FilmStaff do
   test_cases = {
-    id: {
+    filmId: {
       key_transformations: {
-        %i[id film_id filmId] => 1
+        %i[film_id filmId] => 1
       },
       required: true
     }

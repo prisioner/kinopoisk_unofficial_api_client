@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v2.2/films?order=RATING&page=1&ratingFrom=0&ratingTo=10&type=ALL&yearFrom=1000&yearTo=3000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - WRONG_API_KEY
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:13:26 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '81'
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    body:
+      encoding: UTF-8
+      string: '{"message":"You don''t have permissions. See https://kinopoiskapiunofficial.tech"}'
+  recorded_at: Wed, 09 Apr 2025 03:13:26 GMT
+recorded_with: VCR 6.3.1

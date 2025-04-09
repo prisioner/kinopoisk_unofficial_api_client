@@ -770,7 +770,7 @@
       "required": true
     },
     "growth": {
-      "type": "string",
+      "type": "integer",
       "nullable": true,
       "required": true
     },
@@ -1350,7 +1350,7 @@
       "nullable": true
     },
     "year": {
-      "type": "string",
+      "type": "integer",
       "nullable": true
     },
     "type": {
@@ -1516,7 +1516,7 @@
       "nullable": true
     },
     "year": {
-      "type": "string",
+      "type": "integer",
       "nullable": true
     },
     "type": {

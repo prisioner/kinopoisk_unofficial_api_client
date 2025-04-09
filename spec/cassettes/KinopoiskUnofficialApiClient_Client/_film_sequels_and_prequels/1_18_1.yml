@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v2.1/films/5502/sequels_and_prequels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:19:52 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZmlsbUlkIjo0NzYsIm5hbWVSdSI6ItCd0LDQt9Cw0LQg0LIg0LHRg9C00YPRidC10LUiLCJuYW1lRW4iOiJCYWNrIHRvIHRoZSBGdXR1cmUiLCJuYW1lT3JpZ2luYWwiOiJCYWNrIHRvIHRoZSBGdXR1cmUiLCJwb3N0ZXJVcmwiOiJodHRwczovL2tpbm9wb2lza2FwaXVub2ZmaWNpYWwudGVjaC9pbWFnZXMvcG9zdGVycy9rcC80NzYuanBnIiwicG9zdGVyVXJsUHJldmlldyI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9wb3N0ZXJzL2twX3NtYWxsLzQ3Ni5qcGciLCJyZWxhdGlvblR5cGUiOiJQUkVRVUVMIn0seyJmaWxtSWQiOjcxMDMsIm5hbWVSdSI6ItCd0LDQt9Cw0LQg0LIg0LHRg9C00YPRidC10LUgMyIsIm5hbWVFbiI6IkJhY2sgdG8gdGhlIEZ1dHVyZSBQYXJ0IElJSSIsIm5hbWVPcmlnaW5hbCI6IkJhY2sgdG8gdGhlIEZ1dHVyZSBQYXJ0IElJSSIsInBvc3RlclVybCI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9wb3N0ZXJzL2twLzcxMDMuanBnIiwicG9zdGVyVXJsUHJldmlldyI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9wb3N0ZXJzL2twX3NtYWxsLzcxMDMuanBnIiwicmVsYXRpb25UeXBlIjoiU0VRVUVMIn0seyJmaWxtSWQiOjIyOTQwNCwibmFtZVJ1Ijoi0J3QsNC30LDQtCDQsiDQsdGD0LTRg9GJ0LXQtSIsIm5hbWVFbiI6IkJhY2sgdG8gdGhlIEZ1dHVyZSIsIm5hbWVPcmlnaW5hbCI6IkJhY2sgdG8gdGhlIEZ1dHVyZSIsInBvc3RlclVybCI6Imh0dHBzOi8va2lub3BvaXNrYXBpdW5vZmZpY2lhbC50ZWNoL2ltYWdlcy9wb3N0ZXJzL2twLzIyOTQwNC5qcGciLCJwb3N0ZXJVcmxQcmV2aWV3IjoiaHR0cHM6Ly9raW5vcG9pc2thcGl1bm9mZmljaWFsLnRlY2gvaW1hZ2VzL3Bvc3RlcnMva3Bfc21hbGwvMjI5NDA0LmpwZyIsInJlbGF0aW9uVHlwZSI6IlNFUVVFTCJ9XQ==
+  recorded_at: Wed, 09 Apr 2025 03:19:51 GMT
+recorded_with: VCR 6.3.1

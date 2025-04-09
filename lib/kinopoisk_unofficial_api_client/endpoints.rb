@@ -91,8 +91,9 @@ module KinopoiskUnofficialApiClient
       version: "v2.2"
     }.freeze,
     film_sequels_and_prequels: {
-      path: "/films",
-      response_type: Types::FilmSequelsAndPrequelsResponse,
+      path: "/films/{id}/sequels_and_prequels",
+      path_params: %w[id],
+      response_type: Types::Array.of(Types::FilmSequelsAndPrequelsResponse),
       version: "v2.1"
     }.freeze,
     search_film_by_keyword: {
@@ -102,7 +103,7 @@ module KinopoiskUnofficialApiClient
     }.freeze,
     film_staff: {
       path: "/staff",
-      response_type: Types::StaffResponse,
+      response_type: Types::Array.of(Types::StaffResponse),
       version: "v1"
     }.freeze,
     staff: {

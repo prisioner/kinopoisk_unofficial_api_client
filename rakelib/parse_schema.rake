@@ -2,6 +2,11 @@
 
 require "openapi3_parser"
 
+INCONSISTENT_TYPES = {
+  "year" => %w[FilmCollectionResponse::Item KinopoiskUserVoteResponse::Item].freeze,
+  "growth" => %w[PersonResponse].freeze
+}.freeze
+
 # rubocop:disable Metrics/BlockLength
 desc "Parse types from public json, should be up to date https://kinopoiskapiunofficial.tech/documentation/api/"
 task :parse_schema do
@@ -20,7 +25,6 @@ task :parse_schema do
       attribute[:type] = attribute[:type].join if attribute[:type]&.length == 1
 
       attribute[:nullable] = property_schema.nullable?
-      attribute[:nullable] = true if type_name == "Distribution" && property_name == "country"
 
       attribute[:required] = true if required_keys(schema).include?(property_name)
 
@@ -40,6 +44,11 @@ task :parse_schema do
       attribute[:items] = property_schema.items.name if property_schema&.items&.type == "object"
 
       attribute[:items] = cast_underscored_type(attribute[:items]) if attribute[:items]
+
+      # hacks to fix documentation bugs
+      attribute[:nullable] = true if type_name == "Distribution" && property_name == "country"
+      attribute[:type] = "integer" if INCONSISTENT_TYPES["year"].include?(type_name) && property_name == "year"
+      attribute[:type] = "integer" if INCONSISTENT_TYPES["growth"].include?(type_name) && property_name == "growth"
 
       attribute = apply_default_schema(attribute, property_schema)
       [property_name, attribute]

@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v2.2/films/79848/distributions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:19:51 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6MTMsIml0ZW1zIjpbeyJ0eXBlIjoiQUxMIiwic3ViVHlwZSI6IkRJR0lUQUwiLCJkYXRlIjoiMTk5OS0wMS0xMCIsInJlUmVsZWFzZSI6ZmFsc2UsImNvdW50cnkiOm51bGwsImNvbXBhbmllcyI6W3sibmFtZSI6IkhCTyJ9XX0seyJ0eXBlIjoiQ09VTlRSWV9TUEVDSUZJQyIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIyMDAyLTEwLTI3IiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0KDQvtGB0YHQuNGPIn0sImNvbXBhbmllcyI6W119LHsidHlwZSI6IlBSRU1JRVJFIiwic3ViVHlwZSI6bnVsbCwiZGF0ZSI6IjE5OTktMDEtMTAiLCJyZVJlbGVhc2UiOmZhbHNlLCJjb3VudHJ5Ijp7ImNvdW50cnkiOiLQodCo0JAifSwiY29tcGFuaWVzIjpbXX0seyJ0eXBlIjoiUFJFTUlFUkUiLCJzdWJUeXBlIjpudWxsLCJkYXRlIjoiMTk5OS0wMS0xMCIsInJlUmVsZWFzZSI6ZmFsc2UsImNvdW50cnkiOnsiY291bnRyeSI6ItCR0YDQsNC30LjQu9C40Y8ifSwiY29tcGFuaWVzIjpbXX0seyJ0eXBlIjoiUFJFTUlFUkUiLCJzdWJUeXBlIjpudWxsLCJkYXRlIjoiMTk5OS0wMS0xMCIsInJlUmVsZWFzZSI6ZmFsc2UsImNvdW50cnkiOnsiY291bnRyeSI6ItCf0L7Qu9GM0YjQsCJ9LCJjb21wYW5pZXMiOltdfSx7InR5cGUiOiJQUkVNSUVSRSIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIxOTk5LTAxLTEwIiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0KTQuNC70LjQv9C/0LjQvdGLIn0sImNvbXBhbmllcyI6W119LHsidHlwZSI6IlBSRU1JRVJFIiwic3ViVHlwZSI6bnVsbCwiZGF0ZSI6IjE5OTktMDEtMjEiLCJyZVJlbGVhc2UiOmZhbHNlLCJjb3VudHJ5Ijp7ImNvdW50cnkiOiLQmtC+0YDQtdGPINCu0LbQvdCw0Y8ifSwiY29tcGFuaWVzIjpbXX0seyJ0eXBlIjoiUFJFTUlFUkUiLCJzdWJUeXBlIjpudWxsLCJkYXRlIjoiMTk5OS0wMS0yMSIsInJlUmVsZWFzZSI6ZmFsc2UsImNvdW50cnkiOnsiY291bnRyeSI6ItCY0L3QtNC+0L3QtdC30LjRjyJ9LCJjb21wYW5pZXMiOltdfSx7InR5cGUiOiJQUkVNSUVSRSIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIxOTk5LTA3LTE1IiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0JLQtdC70LjQutC+0LHRgNC40YLQsNC90LjRjyJ9LCJjb21wYW5pZXMiOltdfSx7InR5cGUiOiJQUkVNSUVSRSIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIxOTk5LTA4LTEzIiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0K7QkNCgIn0sImNvbXBhbmllcyI6W119LHsidHlwZSI6IlBSRU1JRVJFIiwic3ViVHlwZSI6bnVsbCwiZGF0ZSI6IjE5OTktMDktMDUiLCJyZVJlbGVhc2UiOmZhbHNlLCJjb3VudHJ5Ijp7ImNvdW50cnkiOiLQpNGA0LDQvdGG0LjRjyJ9LCJjb21wYW5pZXMiOltdfSx7InR5cGUiOiJQUkVNSUVSRSIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIxOTk5LTA5LTA1IiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0J3QuNC00LXRgNC70LDQvdC00YsifSwiY29tcGFuaWVzIjpbXX0seyJ0eXBlIjoiV09STERfUFJFTUlFUiIsInN1YlR5cGUiOm51bGwsImRhdGUiOiIxOTk5LTAxLTEwIiwicmVSZWxlYXNlIjpmYWxzZSwiY291bnRyeSI6eyJjb3VudHJ5Ijoi0KHQqNCQIn0sImNvbXBhbmllcyI6W119XX0=
+  recorded_at: Wed, 09 Apr 2025 03:19:51 GMT
+recorded_with: VCR 6.3.1

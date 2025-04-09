@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kinopoiskapiunofficial.tech/api/v2.2/films/4502606/videos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - nginx/1.24.0
+      date:
+      - Wed, 09 Apr 2025 03:19:51 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6MSwiaXRlbXMiOlt7InVybCI6Imh0dHBzOi8vdHJhaWxlcnMuczMubWRzLnlhbmRleC5uZXQvdmlkZW9fb3JpZ2luYWwvMjAxNDEwLTg1MTEzNzA3NDA0Mzg1NTMubXA0IiwibmFtZSI6ItCi0YDQtdC50LvQtdGAIiwic2l0ZSI6IlVOS05PV04ifV19
+  recorded_at: Wed, 09 Apr 2025 03:19:51 GMT
+recorded_with: VCR 6.3.1
