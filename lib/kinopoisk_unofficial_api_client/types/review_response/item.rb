@@ -4,17 +4,14 @@ module KinopoiskUnofficialApiClient
   module Types
     class ReviewResponse < Base
       class Item < Base
-        attribute? :kinopoiskId, Types::Integer
+        attribute? :kinopoisk_id, Types::Integer
         attribute? :type, Types::String
         attribute? :date, Types::String
-        attribute? :positiveRating, Types::Integer
-        attribute? :negativeRating, Types::Integer
+        attribute? :positive_rating, Types::Integer
+        attribute? :negative_rating, Types::Integer
         attribute? :author, Types::String
         attribute? :title, Types::String.optional
         attribute? :description, Types::String
-        alias kinopoisk_id kinopoiskId
-        alias positive_rating positiveRating
-        alias negative_rating negativeRating
       end
     end
   end

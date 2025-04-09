@@ -7,12 +7,6 @@ module KinopoiskUnofficialApiClient
       <% attributes.each_pair do |name, properties| %>
         <%= "#{properties[:required] ? 'attribute' : 'attribute?'} :#{name}, #{properties[:type]}" %>
       <% end %>
-
-      <% attributes.each_key do |name| %>
-        <% underscore_name = name.to_s.gsub(/([a-z\d])([A-Z])/,'\1_\2').downcase %>
-        <% next if name.to_s == underscore_name %>
-        <%= "alias #{underscore_name} #{name}" %>
-      <% end %>
       end
     end
   end

@@ -51,7 +51,9 @@ task :parse_schema do
       attribute[:type] = "integer" if INCONSISTENT_TYPES["growth"].include?(type_name) && property_name == "growth"
 
       attribute = apply_default_schema(attribute, property_schema)
-      [property_name, attribute]
+
+      underscored_property_name = property_name.gsub(/([a-z\d])([A-Z])/, '\1_\2').downcase
+      [underscored_property_name, attribute]
     end
 
     # find empty classes

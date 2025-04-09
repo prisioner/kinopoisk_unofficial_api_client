@@ -3,88 +3,51 @@
 module KinopoiskUnofficialApiClient
   module Types
     class Film < Base
-      attribute :kinopoiskId, Types::Integer
-      attribute :kinopoiskHDId, Types::String.optional
-      attribute :imdbId, Types::String.optional
-      attribute :nameRu, Types::String.optional
-      attribute :nameEn, Types::String.optional
-      attribute :nameOriginal, Types::String.optional
-      attribute :posterUrl, Types::String
-      attribute :posterUrlPreview, Types::String
-      attribute :coverUrl, Types::String.optional
-      attribute :logoUrl, Types::String.optional
-      attribute :reviewsCount, Types::Integer
-      attribute :ratingGoodReview, Types::Float | Types::Integer.optional
-      attribute :ratingGoodReviewVoteCount, Types::Integer.optional
-      attribute :ratingKinopoisk, Types::Float | Types::Integer.optional
-      attribute :ratingKinopoiskVoteCount, Types::Integer.optional
-      attribute :ratingImdb, Types::Float | Types::Integer.optional
-      attribute :ratingImdbVoteCount, Types::Integer.optional
-      attribute :ratingFilmCritics, Types::Float | Types::Integer.optional
-      attribute :ratingFilmCriticsVoteCount, Types::Integer.optional
-      attribute :ratingAwait, Types::Float | Types::Integer.optional
-      attribute :ratingAwaitCount, Types::Integer.optional
-      attribute :ratingRfCritics, Types::Float | Types::Integer.optional
-      attribute :ratingRfCriticsVoteCount, Types::Integer.optional
-      attribute :webUrl, Types::String
+      attribute :kinopoisk_id, Types::Integer
+      attribute :kinopoisk_hdid, Types::String.optional
+      attribute :imdb_id, Types::String.optional
+      attribute :name_ru, Types::String.optional
+      attribute :name_en, Types::String.optional
+      attribute :name_original, Types::String.optional
+      attribute :poster_url, Types::String
+      attribute :poster_url_preview, Types::String
+      attribute :cover_url, Types::String.optional
+      attribute :logo_url, Types::String.optional
+      attribute :reviews_count, Types::Integer
+      attribute :rating_good_review, Types::Float | Types::Integer.optional
+      attribute :rating_good_review_vote_count, Types::Integer.optional
+      attribute :rating_kinopoisk, Types::Float | Types::Integer.optional
+      attribute :rating_kinopoisk_vote_count, Types::Integer.optional
+      attribute :rating_imdb, Types::Float | Types::Integer.optional
+      attribute :rating_imdb_vote_count, Types::Integer.optional
+      attribute :rating_film_critics, Types::Float | Types::Integer.optional
+      attribute :rating_film_critics_vote_count, Types::Integer.optional
+      attribute :rating_await, Types::Float | Types::Integer.optional
+      attribute :rating_await_count, Types::Integer.optional
+      attribute :rating_rf_critics, Types::Float | Types::Integer.optional
+      attribute :rating_rf_critics_vote_count, Types::Integer.optional
+      attribute :web_url, Types::String
       attribute :year, Types::Integer.optional
-      attribute :filmLength, Types::Integer.optional
+      attribute :film_length, Types::Integer.optional
       attribute :slogan, Types::String.optional
       attribute :description, Types::String.optional
-      attribute :shortDescription, Types::String.optional
-      attribute :editorAnnotation, Types::String.optional
-      attribute :isTicketsAvailable, Types::Bool
-      attribute :productionStatus, Types::String.optional
+      attribute :short_description, Types::String.optional
+      attribute :editor_annotation, Types::String.optional
+      attribute :is_tickets_available, Types::Bool
+      attribute :production_status, Types::String.optional
       attribute :type, Types::String
-      attribute :ratingMpaa, Types::String.optional
-      attribute :ratingAgeLimits, Types::String.optional
-      attribute :hasImax, Types::Bool.optional
-      attribute :has3D, Types::Bool.optional
-      attribute :lastSync, Types::String
+      attribute :rating_mpaa, Types::String.optional
+      attribute :rating_age_limits, Types::String.optional
+      attribute :has_imax, Types::Bool.optional
+      attribute :has3_d, Types::Bool.optional
+      attribute :last_sync, Types::String
       attribute :countries, Types::Array.of(Country)
       attribute :genres, Types::Array.of(Genre)
-      attribute :startYear, Types::Integer.optional
-      attribute :endYear, Types::Integer.optional
+      attribute :start_year, Types::Integer.optional
+      attribute :end_year, Types::Integer.optional
       attribute? :serial, Types::Bool.optional
-      attribute? :shortFilm, Types::Bool.optional
+      attribute? :short_film, Types::Bool.optional
       attribute? :completed, Types::Bool.optional
-      alias kinopoisk_id kinopoiskId
-      alias kinopoisk_hdid kinopoiskHDId
-      alias imdb_id imdbId
-      alias name_ru nameRu
-      alias name_en nameEn
-      alias name_original nameOriginal
-      alias poster_url posterUrl
-      alias poster_url_preview posterUrlPreview
-      alias cover_url coverUrl
-      alias logo_url logoUrl
-      alias reviews_count reviewsCount
-      alias rating_good_review ratingGoodReview
-      alias rating_good_review_vote_count ratingGoodReviewVoteCount
-      alias rating_kinopoisk ratingKinopoisk
-      alias rating_kinopoisk_vote_count ratingKinopoiskVoteCount
-      alias rating_imdb ratingImdb
-      alias rating_imdb_vote_count ratingImdbVoteCount
-      alias rating_film_critics ratingFilmCritics
-      alias rating_film_critics_vote_count ratingFilmCriticsVoteCount
-      alias rating_await ratingAwait
-      alias rating_await_count ratingAwaitCount
-      alias rating_rf_critics ratingRfCritics
-      alias rating_rf_critics_vote_count ratingRfCriticsVoteCount
-      alias web_url webUrl
-      alias film_length filmLength
-      alias short_description shortDescription
-      alias editor_annotation editorAnnotation
-      alias is_tickets_available isTicketsAvailable
-      alias production_status productionStatus
-      alias rating_mpaa ratingMpaa
-      alias rating_age_limits ratingAgeLimits
-      alias has_imax hasImax
-      alias has3_d has3D
-      alias last_sync lastSync
-      alias start_year startYear
-      alias end_year endYear
-      alias short_film shortFilm
     end
   end
 end

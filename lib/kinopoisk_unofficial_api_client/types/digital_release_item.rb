@@ -3,29 +3,20 @@
 module KinopoiskUnofficialApiClient
   module Types
     class DigitalReleaseItem < Base
-      attribute :filmId, Types::Integer
-      attribute :nameRu, Types::String
-      attribute :nameEn, Types::String
+      attribute :film_id, Types::Integer
+      attribute :name_ru, Types::String
+      attribute :name_en, Types::String
       attribute :year, Types::Integer
-      attribute :posterUrl, Types::String
-      attribute :posterUrlPreview, Types::String
+      attribute :poster_url, Types::String
+      attribute :poster_url_preview, Types::String
       attribute :countries, Types::Array.of(Country)
       attribute :genres, Types::Array.of(Genre)
       attribute :rating, Types::Float | Types::Integer
-      attribute :ratingVoteCount, Types::Integer
-      attribute :expectationsRating, Types::Float | Types::Integer
-      attribute :expectationsRatingVoteCount, Types::Integer
+      attribute :rating_vote_count, Types::Integer
+      attribute :expectations_rating, Types::Float | Types::Integer
+      attribute :expectations_rating_vote_count, Types::Integer
       attribute :duration, Types::Integer
-      attribute :releaseDate, Types::String
-      alias film_id filmId
-      alias name_ru nameRu
-      alias name_en nameEn
-      alias poster_url posterUrl
-      alias poster_url_preview posterUrlPreview
-      alias rating_vote_count ratingVoteCount
-      alias expectations_rating expectationsRating
-      alias expectations_rating_vote_count expectationsRatingVoteCount
-      alias release_date releaseDate
+      attribute :release_date, Types::String
     end
   end
 end

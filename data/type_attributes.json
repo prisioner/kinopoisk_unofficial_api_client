@@ -1,121 +1,121 @@
 {
   "Film": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "kinopoiskHDId": {
+    "kinopoisk_hdid": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "imdbId": {
+    "imdb_id": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "posterUrl": {
-      "type": "string",
-      "nullable": false,
-      "required": true
-    },
-    "posterUrlPreview": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "coverUrl": {
+    "poster_url_preview": {
+      "type": "string",
+      "nullable": false,
+      "required": true
+    },
+    "cover_url": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "logoUrl": {
+    "logo_url": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "reviewsCount": {
+    "reviews_count": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "ratingGoodReview": {
+    "rating_good_review": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingGoodReviewVoteCount": {
+    "rating_good_review_vote_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "ratingKinopoisk": {
+    "rating_kinopoisk": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingKinopoiskVoteCount": {
+    "rating_kinopoisk_vote_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "ratingImdb": {
+    "rating_imdb": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingImdbVoteCount": {
+    "rating_imdb_vote_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "ratingFilmCritics": {
+    "rating_film_critics": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingFilmCriticsVoteCount": {
+    "rating_film_critics_vote_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "ratingAwait": {
+    "rating_await": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingAwaitCount": {
+    "rating_await_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "ratingRfCritics": {
+    "rating_rf_critics": {
       "type": "number",
       "nullable": true,
       "required": true
     },
-    "ratingRfCriticsVoteCount": {
+    "rating_rf_critics_vote_count": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "webUrl": {
+    "web_url": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -125,7 +125,7 @@
       "nullable": true,
       "required": true
     },
-    "filmLength": {
+    "film_length": {
       "type": "integer",
       "nullable": true,
       "required": true
@@ -140,22 +140,22 @@
       "nullable": true,
       "required": true
     },
-    "shortDescription": {
+    "short_description": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "editorAnnotation": {
+    "editor_annotation": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "isTicketsAvailable": {
+    "is_tickets_available": {
       "type": "boolean",
       "nullable": false,
       "required": true
     },
-    "productionStatus": {
+    "production_status": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -165,27 +165,27 @@
       "nullable": false,
       "required": true
     },
-    "ratingMpaa": {
+    "rating_mpaa": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "ratingAgeLimits": {
+    "rating_age_limits": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "hasImax": {
+    "has_imax": {
       "type": "boolean",
       "nullable": true,
       "required": true
     },
-    "has3D": {
+    "has3_d": {
       "type": "boolean",
       "nullable": true,
       "required": true
     },
-    "lastSync": {
+    "last_sync": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -202,12 +202,12 @@
       "required": true,
       "items": "Genre"
     },
-    "startYear": {
+    "start_year": {
       "type": "integer",
       "nullable": true,
       "required": true
     },
-    "endYear": {
+    "end_year": {
       "type": "integer",
       "nullable": true,
       "required": true
@@ -216,7 +216,7 @@
       "type": "boolean",
       "nullable": true
     },
-    "shortFilm": {
+    "short_film": {
       "type": "boolean",
       "nullable": true
     },
@@ -305,7 +305,7 @@
       "nullable": false,
       "required": true
     },
-    "currencyCode": {
+    "currency_code": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -345,12 +345,12 @@
       "nullable": false,
       "required": true
     },
-    "imageUrl": {
+    "image_url": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nominationName": {
+    "nomination_name": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -367,22 +367,22 @@
     }
   },
   "AwardPerson": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "webUrl": {
+    "web_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -392,7 +392,7 @@
       "nullable": false,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -439,7 +439,7 @@
       "nullable": false,
       "required": true
     },
-    "subType": {
+    "sub_type": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -449,7 +449,7 @@
       "nullable": true,
       "required": true
     },
-    "reRelease": {
+    "re_release": {
       "type": "boolean",
       "nullable": true,
       "required": true
@@ -487,22 +487,22 @@
     }
   },
   "Episode": {
-    "seasonNumber": {
+    "season_number": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "episodeNumber": {
+    "episode_number": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -512,7 +512,7 @@
       "nullable": true,
       "required": true
     },
-    "releaseDate": {
+    "release_date": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -552,12 +552,12 @@
       "nullable": false,
       "required": true
     },
-    "pagesCount": {
+    "pages_count": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "searchFilmsCountResult": {
+    "search_films_count_result": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -575,7 +575,7 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -588,37 +588,37 @@
     }
   },
   "FilmSequelsAndPrequelsResponse": {
-    "filmId": {
+    "film_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "relationType": {
+    "relation_type": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -643,22 +643,22 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "totalPositiveReviews": {
+    "total_positive_reviews": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "totalNegativeReviews": {
+    "total_negative_reviews": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "totalNeutralReviews": {
+    "total_neutral_reviews": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -689,7 +689,7 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -702,17 +702,17 @@
     }
   },
   "StaffResponse": {
-    "staffId": {
+    "staff_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -722,39 +722,39 @@
       "nullable": true,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "professionText": {
+    "profession_text": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "professionKey": {
+    "profession_key": {
       "type": "string",
       "nullable": false,
       "required": true
     }
   },
   "PersonResponse": {
-    "personId": {
+    "person_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "webUrl": {
+    "web_url": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -764,7 +764,7 @@
       "nullable": true,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -799,7 +799,7 @@
       "nullable": true,
       "required": true
     },
-    "hasAwards": {
+    "has_awards": {
       "type": "integer",
       "nullable": true,
       "required": true
@@ -847,7 +847,7 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -873,17 +873,17 @@
     }
   },
   "PremiereResponseItem": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true,
       "required": true
@@ -893,12 +893,12 @@
       "nullable": false,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -920,7 +920,7 @@
       "nullable": true,
       "required": true
     },
-    "premiereRu": {
+    "premiere_ru": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -945,17 +945,17 @@
     }
   },
   "DigitalReleaseItem": {
-    "filmId": {
+    "film_id": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -965,12 +965,12 @@
       "nullable": false,
       "required": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false,
       "required": true
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -992,17 +992,17 @@
       "nullable": false,
       "required": true
     },
-    "ratingVoteCount": {
+    "rating_vote_count": {
       "type": "integer",
       "nullable": false,
       "required": true
     },
-    "expectationsRating": {
+    "expectations_rating": {
       "type": "number",
       "nullable": false,
       "required": true
     },
-    "expectationsRatingVoteCount": {
+    "expectations_rating_vote_count": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -1012,7 +1012,7 @@
       "nullable": false,
       "required": true
     },
-    "releaseDate": {
+    "release_date": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -1037,7 +1037,7 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -1050,17 +1050,17 @@
     }
   },
   "ApiKeyResponse": {
-    "totalQuota": {
+    "total_quota": {
       "type": "ApiKeyResponse::TotalQuota",
       "nullable": false,
       "required": true
     },
-    "dailyQuota": {
+    "daily_quota": {
       "type": "ApiKeyResponse::DailyQuota",
       "nullable": false,
       "required": true
     },
-    "accountType": {
+    "account_type": {
       "type": "string",
       "nullable": false,
       "required": true
@@ -1072,7 +1072,7 @@
       "nullable": false,
       "required": true
     },
-    "totalPages": {
+    "total_pages": {
       "type": "integer",
       "nullable": false,
       "required": true
@@ -1105,15 +1105,15 @@
     }
   },
   "FilmSearchResponse::Film": {
-    "filmId": {
+    "film_id": {
       "type": "integer",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": false
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": false
     },
@@ -1129,7 +1129,7 @@
       "type": "string",
       "nullable": false
     },
-    "filmLength": {
+    "film_length": {
       "type": "string",
       "nullable": false
     },
@@ -1147,37 +1147,37 @@
       "type": "string",
       "nullable": false
     },
-    "ratingVoteCount": {
+    "rating_vote_count": {
       "type": "integer",
       "nullable": false
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false
     }
   },
   "FilmSearchByFiltersResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
-    "imdbId": {
+    "imdb_id": {
       "type": "string",
       "nullable": true
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": true
     },
@@ -1191,11 +1191,11 @@
       "nullable": false,
       "items": "Genre"
     },
-    "ratingKinopoisk": {
+    "rating_kinopoisk": {
       "type": "number",
       "nullable": true
     },
-    "ratingImdb": {
+    "rating_imdb": {
       "type": "number",
       "nullable": true
     },
@@ -1207,47 +1207,47 @@
       "type": "string",
       "nullable": false
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false
     }
   },
   "RelatedFilmResponse::Item": {
-    "filmId": {
+    "film_id": {
       "type": "integer",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false
     },
-    "relationType": {
+    "relation_type": {
       "type": "string",
       "nullable": false
     }
   },
   "ReviewResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
@@ -1259,11 +1259,11 @@
       "type": "string",
       "nullable": false
     },
-    "positiveRating": {
+    "positive_rating": {
       "type": "integer",
       "nullable": false
     },
-    "negativeRating": {
+    "negative_rating": {
       "type": "integer",
       "nullable": false
     },
@@ -1289,15 +1289,15 @@
       "type": "string",
       "nullable": false
     },
-    "logoUrl": {
+    "logo_url": {
       "type": "string",
       "nullable": false
     },
-    "positiveRating": {
+    "positive_rating": {
       "type": "integer",
       "nullable": false
     },
-    "negativeRating": {
+    "negative_rating": {
       "type": "integer",
       "nullable": false
     },
@@ -1315,19 +1315,19 @@
     }
   },
   "FilmCollectionResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": true
     },
@@ -1341,11 +1341,11 @@
       "nullable": false,
       "items": "Genre"
     },
-    "ratingKinopoisk": {
+    "rating_kinopoisk": {
       "type": "number",
       "nullable": true
     },
-    "ratingImbd": {
+    "rating_imbd": {
       "type": "number",
       "nullable": true
     },
@@ -1357,17 +1357,17 @@
       "type": "string",
       "nullable": false
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false
     }
   },
   "PersonResponse::Spouse": {
-    "personId": {
+    "person_id": {
       "type": "integer",
       "nullable": false
     },
@@ -1379,7 +1379,7 @@
       "type": "boolean",
       "nullable": false
     },
-    "divorcedReason": {
+    "divorced_reason": {
       "type": "string",
       "nullable": true
     },
@@ -1391,7 +1391,7 @@
       "type": "integer",
       "nullable": false
     },
-    "webUrl": {
+    "web_url": {
       "type": "string",
       "nullable": false
     },
@@ -1401,15 +1401,15 @@
     }
   },
   "PersonResponse::Film": {
-    "filmId": {
+    "film_id": {
       "type": "integer",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
@@ -1425,25 +1425,25 @@
       "type": "string",
       "nullable": true
     },
-    "professionKey": {
+    "profession_key": {
       "type": "string",
       "nullable": false
     }
   },
   "PersonByNameResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
-    "webUrl": {
+    "web_url": {
       "type": "string",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
@@ -1451,17 +1451,17 @@
       "type": "string",
       "nullable": true
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     }
   },
   "ImageResponse::Item": {
-    "imageUrl": {
+    "image_url": {
       "type": "string",
       "nullable": false
     },
-    "previewUrl": {
+    "preview_url": {
       "type": "string",
       "nullable": false
     }
@@ -1481,19 +1481,19 @@
     }
   },
   "KinopoiskUserVoteResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
-    "nameRu": {
+    "name_ru": {
       "type": "string",
       "nullable": true
     },
-    "nameEn": {
+    "name_en": {
       "type": "string",
       "nullable": true
     },
-    "nameOriginal": {
+    "name_original": {
       "type": "string",
       "nullable": true
     },
@@ -1507,11 +1507,11 @@
       "nullable": false,
       "items": "Genre"
     },
-    "ratingKinopoisk": {
+    "rating_kinopoisk": {
       "type": "number",
       "nullable": true
     },
-    "ratingImbd": {
+    "rating_imbd": {
       "type": "number",
       "nullable": true
     },
@@ -1523,15 +1523,15 @@
       "type": "string",
       "nullable": false
     },
-    "posterUrl": {
+    "poster_url": {
       "type": "string",
       "nullable": false
     },
-    "posterUrlPreview": {
+    "poster_url_preview": {
       "type": "string",
       "nullable": false
     },
-    "userRating": {
+    "user_rating": {
       "type": "integer",
       "nullable": false
     }
@@ -1561,11 +1561,11 @@
     }
   },
   "MediaPostsResponse::Item": {
-    "kinopoiskId": {
+    "kinopoisk_id": {
       "type": "integer",
       "nullable": false
     },
-    "imageUrl": {
+    "image_url": {
       "type": "string",
       "nullable": false
     },
@@ -1581,7 +1581,7 @@
       "type": "string",
       "nullable": false
     },
-    "publishedAt": {
+    "published_at": {
       "type": "string",
       "nullable": false
     }

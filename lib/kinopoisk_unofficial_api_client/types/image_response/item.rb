@@ -4,10 +4,8 @@ module KinopoiskUnofficialApiClient
   module Types
     class ImageResponse < Base
       class Item < Base
-        attribute? :imageUrl, Types::String
-        attribute? :previewUrl, Types::String
-        alias image_url imageUrl
-        alias preview_url previewUrl
+        attribute? :image_url, Types::String
+        attribute? :preview_url, Types::String
       end
     end
   end

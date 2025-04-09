@@ -3,12 +3,9 @@
 module KinopoiskUnofficialApiClient
   module Types
     class ApiKeyResponse < Base
-      attribute :totalQuota, ApiKeyResponse::TotalQuota
-      attribute :dailyQuota, ApiKeyResponse::DailyQuota
-      attribute :accountType, Types::String
-      alias total_quota totalQuota
-      alias daily_quota dailyQuota
-      alias account_type accountType
+      attribute :total_quota, ApiKeyResponse::TotalQuota
+      attribute :daily_quota, ApiKeyResponse::DailyQuota
+      attribute :account_type, Types::String
     end
   end
 end
