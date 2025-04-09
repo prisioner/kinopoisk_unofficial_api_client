@@ -1,5 +1,3 @@
-## [Unreleased]
+## [1.0.0] - 2025-04-09
 
-## [0.1.0] - 2025-04-07
-
-- Initial release
+- Initial release version
