@@ -1,8 +1,8 @@
-# kinopoisk_unofficial_api_client
+# kinopoisk_unofficial_api
 
 Ruby wrapper for [Kinopoisk Unofficial API](https://kinopoiskapiunofficial.tech/documentation/api/).
 
-[![Gem Version](https://badge.fury.io/rb/kinopoisk_unofficial_api_client.svg)](http://badge.fury.io/rb/kinopoisk_unofficial_api_client)
+[![Gem Version](https://badge.fury.io/rb/kinopoisk_unofficial_api.svg)](http://badge.fury.io/rb/kinopoisk_unofficial_api)
 [![Build Status](https://github.com/prisioner/kinopoisk_unofficial_api_client/actions/workflows/main.yml/badge.svg)](https://github.com/prisioner/kinopoisk_unofficial_api_client/actions)
 
 ## Installation
@@ -10,7 +10,7 @@ Ruby wrapper for [Kinopoisk Unofficial API](https://kinopoiskapiunofficial.tech/
 Add following line to your Gemfile:
 
 ```ruby
-gem 'kinopoisk_unofficial_api_client', '~> 1.0.0'
+gem 'kinopoisk_unofficial_api', '~> 1.0.0'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ bundle
 Or install it system-wide:
 
 ```shell
-gem install kinopoisk_unofficial_api_client
+gem install kinopoisk_unofficial_api
 ```
 
 ## Usage
@@ -31,11 +31,11 @@ First things first, you need to [obtain an Api Key](https://kinopoiskapiunoffici
 Then create your API Client like this:
 
 ```ruby
-require 'kinopoisk_unofficial_api_client'
+require 'kinopoisk_unofficial_api'
 
 api_key = 'YOUR_KINOPOISK_UNOFFICIAL_API_API_KEY'
 
-client = KinopoiskUnofficialApiClient::Client.new(api_key)
+client = KinopoiskUnofficialApi::Client.new(api_key)
 
 shawshank_redemption = client.film(id: 326)
 
@@ -89,7 +89,7 @@ movies = client.movie(query_params)
 
 Implemented all endpoints of API v2.2.
 
-Mapping client method names to endpoints available in [lib/kinopoisk_unofficial_api_client/endpoints.rb](lib/kinopoisk_unofficial_api_client/endpoints.rb)
+Mapping client method names to endpoints available in [lib/kinopoisk_unofficial_api/endpoints.rb](lib/kinopoisk_unofficial_api/endpoints.rb)
 
 ## Overriding countries and genres name-to-id mapping
 
@@ -140,7 +140,7 @@ If you want override mapping
 4. Configure gem
 
 ```ruby
-KinopoiskUnofficialApiClient.configure do |config|
+KinopoiskUnofficialApi.configure do |config|
   config.genres = JSON.parse(File.read("my_genres.json"), symbolize_names: true)
   config.countries = JSON.parse(File.read("my_countries.json"), symbolize_names: true)
 end
@@ -158,7 +158,7 @@ You can set up your own proxy and use it to access Kinopoisk Unofficial API.
 In this case you need to configure API URL:
 
 ```ruby
-KinopoiskUnofficialApiClient::Client.run(api_key, url: 'https://proxy.example.com') do |bot|
+KinopoiskUnofficialApi::Client.run(api_key, url: 'https://proxy.example.com') do |bot|
   # ...
 end
 ```
@@ -171,7 +171,7 @@ You can use any of supported adapters (for example, `net/http/persistent`):
 ```ruby
 require 'net/http/persistent'
 
-KinopoiskUnofficialApiClient.configure do |config|
+KinopoiskUnofficialApi.configure do |config|
   config.adapter = :net_http_persistent
 end
 ```

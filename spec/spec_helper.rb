@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "kinopoisk_unofficial_api_client"
+require "kinopoisk_unofficial_api"
 require "dotenv/load"
 
 ENV["X_API_KEY"] ||= "test"
@@ -32,7 +32,7 @@ RSpec.configure do |config|
   end
 end
 
-KinopoiskUnofficialApiClient.configure do |config|
+KinopoiskUnofficialApi.configure do |config|
   config.genres = JSON.parse(File.read("#{__dir__}/fixtures/genres.json"), symbolize_names: true)
   config.countries = JSON.parse(File.read("#{__dir__}/fixtures/countries.json"), symbolize_names: true)
 end

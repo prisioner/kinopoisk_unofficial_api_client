@@ -38,7 +38,7 @@ task :rebuild_types do
 
     next build_nested_type(name, attributes) if name.to_s.include?("::")
 
-    File.write "#{__dir__}/../lib/kinopoisk_unofficial_api_client/types/#{underscore(name)}.rb",
+    File.write "#{__dir__}/../lib/kinopoisk_unofficial_api/types/#{underscore(name)}.rb",
                ERB.new(File.read("#{__dir__}/templates/type.erb")).result(binding).gsub(/^\s+\n/, "")
   end
 end
@@ -46,17 +46,17 @@ end
 
 def build_empty_type(name, attributes)
   attributes = attributes[:type].join(" |\n      ")
-  File.write "#{__dir__}/../lib/kinopoisk_unofficial_api_client/types/#{underscore(name)}.rb",
+  File.write "#{__dir__}/../lib/kinopoisk_unofficial_api/types/#{underscore(name)}.rb",
              ERB.new(File.read("#{__dir__}/templates/empty_type.erb")).result(binding).gsub(/^\s+\n/, "")
 end
 
 def build_nested_type(name, attributes)
   namespace_name, type_name = name.to_s.split("::")
 
-  dir_path = "#{__dir__}/../lib/kinopoisk_unofficial_api_client/types/#{underscore(namespace_name)}"
+  dir_path = "#{__dir__}/../lib/kinopoisk_unofficial_api/types/#{underscore(namespace_name)}"
   FileUtils.mkdir_p(dir_path)
 
-  File.write "#{__dir__}/../lib/kinopoisk_unofficial_api_client/types/#{underscore(name)}.rb",
+  File.write "#{__dir__}/../lib/kinopoisk_unofficial_api/types/#{underscore(name)}.rb",
              ERB.new(File.read("#{__dir__}/templates/nested_type.erb")).result(binding).gsub(/^\s+\n/, "")
 end
 

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in kinopoisk_unofficial_api_client.gemspec
+# Specify your gem's dependencies in kinopoisk_unofficial_api.gemspec
 gemspec
 
 gem "dotenv", "~> 2.8"
